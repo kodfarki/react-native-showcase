@@ -3,8 +3,15 @@ import {StyleSheet, Text, View} from 'react-native';
 
 import {DrawerNavigator} from "react-navigation";
 
+import FirstScreen from "./screens/FirstScreen";
+import SecondScreen from "./screens/SecondScreen";
+import ThirdScreen from "./screens/ThirdScreen";
+
+// documentation: https://reactnavigation.org/docs/navigators/drawer
 const DrawerConfiguration = DrawerNavigator({
-       // Screens will be defined here
+        First: {path: "/", screen: FirstScreen},
+        Second: {path: "/sent", screen: SecondScreen},
+        Third: {path: "/settings", screen: ThirdScreen}
     },
     {
         initialRouteName: "First",
