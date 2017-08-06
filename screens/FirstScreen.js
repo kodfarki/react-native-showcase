@@ -8,6 +8,10 @@ import {StyleSheet, Text, View, Button} from 'react-native';
 
 export default class FirstScreen extends React.Component{
 
+    static navigationOptions = {
+        drawerLabel: "Screen 1",
+    }
+
     render(){
         return (
             <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
