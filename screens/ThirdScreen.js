@@ -22,6 +22,8 @@ export default class ThirdScreen extends React.Component{
         return (
             <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
                 <Text style={{paddingTop: 20, fontSize: 24, color: '#828484'}}>Screen 3</Text>
+                <Button onPress={() => this.props.navigation.navigate("DrawerOpen")}
+                        title="Open DrawNavigator" />
             </View>
         )
     }

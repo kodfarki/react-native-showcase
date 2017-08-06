@@ -23,6 +23,8 @@ export default class FirstScreen extends React.Component{
         return (
             <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
                 <Text style={{paddingTop: 20, fontSize: 24, color: '#424282'}}>Screen 1</Text>
+                <Button onPress={() => this.props.navigation.navigate("DrawerOpen")}
+                        title="Open DrawNavigator" />
             </View>
         )
     }
