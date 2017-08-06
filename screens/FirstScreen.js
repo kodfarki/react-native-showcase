@@ -5,11 +5,18 @@
  */
 import React from 'react';
 import {StyleSheet, Text, View, Button} from 'react-native';
+import MaterialIcons from "react-native-vector-icons/MaterialIcons"
 
 export default class FirstScreen extends React.Component{
 
     static navigationOptions = {
         drawerLabel: "Screen 1",
+        drawerIcon: ({tintColor}) => {
+            return (
+                // documentation: https://material.io/icons/
+                <MaterialIcons name="change-history" size={24} style={{color: tintColor}} />
+            );
+        }
     }
 
     render(){

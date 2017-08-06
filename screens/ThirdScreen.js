@@ -5,11 +5,17 @@
  */
 import React from 'react';
 import {StyleSheet, Text, View, Button} from 'react-native';
+import MaterialIcons from "react-native-vector-icons/MaterialIcons"
 
 export default class ThirdScreen extends React.Component{
 
     static navigationOptions = {
         drawerLabel: "Screen 3",
+        drawerIcon: ({tintColor}) => {
+            return (
+                <MaterialIcons name="settings" size={24} style={{color: tintColor}} />
+            );
+        }
     }
 
     render(){

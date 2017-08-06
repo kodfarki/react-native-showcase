@@ -5,11 +5,17 @@
  */
 import React from 'react';
 import {StyleSheet, Text, View, Button} from 'react-native';
+import MaterialIcons from "react-native-vector-icons/MaterialIcons"
 
 export default class SecondScreen extends React.Component{
 
     static navigationOptions = {
         drawerLabel: "Screen 2",
+        drawerIcon: ({tintColor}) => {
+            return (
+                <MaterialIcons name="schedule" size={24} style={{color: tintColor}} />
+            );
+        }
     }
 
     render(){
