@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 
 import {DrawerNavigator} from "react-navigation";
 
-import FirstScreen from "./screens/FirstScreen";
+import FirstScreen from "./screens/TextComponent";
 import SecondScreen from "./screens/SecondScreen";
 import ThirdScreen from "./screens/ThirdScreen";
 
