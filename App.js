@@ -14,7 +14,7 @@ const DrawerConfiguration = DrawerNavigator({
         Third: {path: "/settings", screen: ThirdScreen}
     },
     {
-        initialRouteName: "First",
+        initialRouteName: "Second",
         drawerPosition: "left",
         contentOptions: {
             activeTintColor: "blue",
